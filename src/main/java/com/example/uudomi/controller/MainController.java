@@ -21,11 +21,11 @@ public class MainController {
     private final MemberService memberService;
 
     // view 관련
-//    @GetMapping("/test")
-//    public String test(Model model) {
-//        model.addAttribute("name", "UJ");
-//        return "test";
-//    }
+    @GetMapping("/test")
+    public String test(Model model) {
+        model.addAttribute("name", "UJ");
+        return "test";
+    }
 
     @GetMapping("/list")
     public String listMember (Model model) {
