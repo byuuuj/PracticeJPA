@@ -30,6 +30,8 @@ public class MainController {
     @GetMapping("/list")
     public String listMember (Model model) {
         List<Member> member = memberService.findMember();
+
+//        로그 추가하기
 //        for (Member member1 : member) {
 //            log.info(member1.getName());
 //        }

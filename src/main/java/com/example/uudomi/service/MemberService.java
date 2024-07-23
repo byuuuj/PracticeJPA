@@ -31,6 +31,7 @@ public class MemberService {
     }
 
     public Member updateMember(Long id, MemberDto dto) {
+//      JPA는 수정이 없어서 수정할 id를 받아와서 setId를 한후 save로 수정
         dto.setId(id);
         return memberRepository.save(dto.toEntity());
     }
